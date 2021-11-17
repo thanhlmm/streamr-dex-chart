@@ -37,6 +37,8 @@ const option = {
   },
 };
 
+const MAX_DATAPOINT = 70;
+
 const DexVolume = () => {
   const subRef = useRef<Subscription | null>(null);
   const chartRef = useRef(null);
@@ -115,7 +117,7 @@ const DexVolume = () => {
         emphasis: {
           focus: "series",
         },
-        data: data.map(([date, dataRow]) => {
+        data: data.slice(-1 * MAX_DATAPOINT).map(([date, dataRow]) => {
           const dexData = dataRow.find((dex: any) => dex.slug === slug);
           return [
             new Date(date).getTime(),
