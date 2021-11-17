@@ -117,7 +117,10 @@ const DexVolume = () => {
         },
         data: data.map(([date, dataRow]) => {
           const dexData = dataRow.find((dex: any) => dex.slug === slug);
-          return [new Date(date).getTime(), dexData?.totalVol24h || 0];
+          return [
+            new Date(date).getTime(),
+            Number(dexData?.totalVol24h?.toFixed(2)) || 0,
+          ];
         }),
       };
     });
