@@ -4,6 +4,8 @@
 
 Proof of concept to stream data via Streamr and display as realtime chart
 
+[Demo](https://streamr-dex-chart.vercel.app/)
+
 _The data is update each 30 mins_
 
 ## Stack
