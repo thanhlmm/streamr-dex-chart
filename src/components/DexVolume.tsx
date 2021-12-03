@@ -5,9 +5,6 @@ import _ from "lodash";
 import { init, getInstanceByDom, ECharts } from "echarts";
 
 const option = {
-  title: {
-    text: "Top 10 DEX by volume",
-  },
   legend: {
     type: "plain",
   },
