@@ -10,6 +10,12 @@ function App() {
       </h1>
       <DexVolume />
 
+      <p>
+        <em>
+        The data is update every 30 mins
+        </em>
+      </p>
+
       <div>
         <ul>
           <li>
