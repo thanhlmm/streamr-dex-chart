@@ -10,7 +10,7 @@ function App() {
       <h1>Top 10 DEX by volume</h1>
       <DexVolume />
 
-      <h1>Blockchain component marketcap</h1>
+      <h1>Blockchain Component Marketcap</h1>
       <SectorComponent />
 
       <p>

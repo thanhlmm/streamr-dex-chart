@@ -42,8 +42,6 @@ const query = gql`
       Synthetics_marketVolume
       Tokenized_Stock_marketCap
       Tokenized_Stock_marketVolume
-      Web3_marketCap
-      Web3_marketVolume
       Wrapped_Tokens_marketCap
       Wrapped_Tokens_marketVolume
       Yearn_Partnerships_marketCap
@@ -70,19 +68,23 @@ const option = {
     order: "valueDesc",
     trigger: "axis",
   },
+  toolbox: {
+    show: true,
+    top: 20,
+    feature: {
+      magicType: {
+        type: ["line", "bar", "stack"],
+      },
+    },
+  },
   xAxis: {
     type: "time",
     splitLine: {
       show: false,
     },
   },
-  // xAxis: {
-  //   type: "category",
-  //   nameLocation: "middle",
-  // },
   yAxis: {
     type: "value",
-    boundaryGap: [0, "100%"],
   },
 };
 
