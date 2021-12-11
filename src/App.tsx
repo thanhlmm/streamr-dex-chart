@@ -14,7 +14,7 @@ function App() {
       <iframe
         src="https://count.co/embed/h6ctrZzSJuz"
         width="100%"
-        height="900"
+        height="2000"
         frameBorder=""
       ></iframe>
 
