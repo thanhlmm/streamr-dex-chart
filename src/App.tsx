@@ -10,6 +10,13 @@ function App() {
       <h1>Top 10 DEX by volume</h1>
       <DexVolume />
 
+      <p>
+        <em>
+          Real time chart power by Streamr. Due to browser security, you need to
+          open on Chrome to view the chart
+        </em>
+      </p>
+
       <h1>Blockchain Component Marketcap</h1>
       <iframe
         src="https://count.co/embed/h6ctrZzSJuz"
