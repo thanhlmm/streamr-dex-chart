@@ -11,7 +11,12 @@ function App() {
       <DexVolume />
 
       <h1>Blockchain Component Marketcap</h1>
-      <SectorComponent />
+      <iframe
+        src="https://count.co/embed/h6ctrZzSJuz"
+        width="100%"
+        height="900"
+        frameBorder=""
+      ></iframe>
 
       <p>
         <em>The data is update every 30 mins</em>
